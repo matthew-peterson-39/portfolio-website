@@ -105,4 +105,8 @@ body {
   border-radius: 5px;
   border-style: none;
 }
+
+.card a {
+  color: #00adb5;
+}
 /*# sourceMappingURL=styles.css.map */
