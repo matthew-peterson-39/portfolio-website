@@ -5,32 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="/main.js" defer></script>
     <title>Portfolio</title>
 </head>
-<header>
-    <div class="logo-container">
-        <h1>Matthew Peterson</h1>
-        <img src="k.png" alt="KaliDog">
-    </div>
-    <div class="nav-container">
-        <button class="about-li"><a href="#">About</a></button>
-        <button class="projects-li"><a href="#">Projects</a></button>
-        <button class="contact-li"><a href="#">Contact</a></button>
-    </div>
-</header>
 <body>
-    <div class="cards">
-        <div class="about-card"></div>
-        <div class="project-card">
-            <h1>Projects</h1>
-            <div class="rock-paper-scissors">
-                <h2>Rock, Paper, Scissors vs. Computer</h2>
-                <p>A simple html based game of rock paper scissors against a computer. The site tracks the score locally. Give it a try!
-                <a href="https://matthew-peterson-39.github.io/rock-paper-scissors/">Try it out!</a></p>
-            </div>
+    
+    <div class="header">
+        <div class="logo-container">
+            <h1>Matthew Peterson</h1>
+            <img src="k.png" alt="KaliDog">
         </div>
-        <div class="contact-card"></div>
+        <div class="nav-container">
+            <button id="about-btn">About</button>
+            <button id="projects-btn">Projects</button>
+            <button id="contact-btn">Contact</button>
+        </div>
+    </div>
+    
+<div class="cards">
+        <div id="about-card">
+            <h1>About Me</h1>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+                turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor 
+                sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies 
+                mi vitae est. Mauris placerat eleifend leo.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+                <li>Vestibulum auctor dapibus neque.</li>
+             </ul>
+                      
+            <h3>Experience</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+                <li>Vestibulum auctor dapibus neque.</li>
+             </ul>   
+        </div>
+       
+        <div id="project-card">
+           
+            <h1>Projects</h1>
+            <div id="projects">
+                <div id="rps">
+                    <h2>Rock, Paper, Scissors vs. Computer</h2>
+                    <p>A simple html based game of rock paper scissors against a computer. The site tracks the score locally. Give it a try!
+                    <a href="https://matthew-peterson-39.github.io/rock-paper-scissors/">Try it out!</a></p>
+                </div>
+                <div id="eas">
+                    <h2>Etch-A-Sketch</h2>
+                    <p>Etch-A-Sketch type game that allows you to draw to a grid! The project involved using JS to manipulate
+                        CSS in a few different ways such as changing the background color and the amount of grids on the drawing board.
+                    <a href="https://matthew-peterson-39.github.io/etch-a-sketch/">Try it out!</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact-card">
+            <h1>Contact Me</h1>
+            <h3>Email form: </h3>
+            <h3>LinkedIn:</h3>
+        </div>
     </div>
 </body>
-
 </html>
