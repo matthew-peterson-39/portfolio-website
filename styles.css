@@ -22,8 +22,8 @@ body {
 }
 
 .header {
-  width: 100vw;
-  height: 150px;
+  min-width: 200px;
+  min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,18 +31,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
+  gap: 5px;
 }
 
 .logo-container {
-  min-height: 100%;
-  min-width: 700px;
+  min-height: auto;
+  min-width: 10px;
   max-width: 100%;
   max-height: 100%;
   display: -webkit-box;
@@ -54,18 +54,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
 }
 
 .logo-container img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 .nav-container {
-  min-width: 700px;
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 30rem;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +73,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
 }
 
 .nav-container button {
@@ -97,9 +94,9 @@ body {
   color: #eeeeee;
 }
 
-.cards {
-  width: 100vw;
-  height: 600px;
+.cards > * {
+  min-width: 400px;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,13 +107,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
-  padding-bottom: 40px;
-  margin-top: 80px;
-}
-
-.cards > * {
-  padding: 20px;
+  margin: 0 auto;
 }
 
 .cards h1 {
@@ -126,13 +117,13 @@ body {
   border-radius: 4px;
   background-color: #00adb5;
   position: relative;
-  bottom: 36px;
+  bottom: 20px;
   padding: 10px;
 }
 
 #about-card {
-  width: 900px;
-  height: 500px;
+  min-width: 400px;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,15 +134,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto 50px;
   background-color: #2f353f;
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
 }
 
+#about-card > * {
+  margin: .5rem;
+}
+
 #project-card {
-  width: 900px;
-  height: 500px;
+  min-width: 400px;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,13 +181,13 @@ body {
 }
 
 #projects > div {
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 
 #contact-card {
-  width: 900px;
-  height: 500px;
+  min-width: 400px;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
