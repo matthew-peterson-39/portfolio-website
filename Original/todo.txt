@@ -1,3 +1,0 @@
--fix calculator app -> make page more responsive ie. alerts/popups to notify what is happening.
--make main site mobile friendly
--organize code files in github
