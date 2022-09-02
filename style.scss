@@ -21,7 +21,6 @@
     position: relative;
     left: 2rem;
     text-align: center;
-
 }
 
 #nav-buttons {
@@ -119,4 +118,27 @@ body {
   .fa-github  a{
     font-size:48px;
     color: black;
+  }
+
+  #project-display {
+    width: 100%;
+    height: calc(100vh - var(--nav-height)) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightcyan;
+    padding: 1em 3em;
+  }
+
+  #project-display div {
+    width: 30%;
+    height: 25vh;
+    text-align: center;
+    background-color: #007bb5;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
