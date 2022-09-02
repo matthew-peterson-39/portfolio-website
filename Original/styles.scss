@@ -14,8 +14,7 @@ body {
 }
 
 .header {
-    min-width: 200px;
-    min-height: 200px;
+    width: min(80ch, 100vw);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -144,3 +143,7 @@ body {
         border-radius: 4px;
     }
 
+    #contact-form {
+        width: min(60%, 90%);
+        background-color: black;
+    }
