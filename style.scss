@@ -120,7 +120,7 @@ body {
     color: black;
   }
 
-  #project-display {
+  .project-display {
     width: 100%;
     height: calc(100vh - var(--nav-height)) ;
     display: flex;
@@ -131,14 +131,22 @@ body {
     padding: 1em 3em;
   }
 
-  #project-display div {
+  .project-display div {
     width: 30%;
     height: 25vh;
     text-align: center;
-    background-color: #007bb5;
+    background-color: white;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+    box-shadow: 0 0 40px lighten(#000, 60%);
+    transition: box-shadow .2s ease-in-out;
+    cursor: pointer;
+}
+
+.project-display div:hover {
+    box-shadow: 0 0 80px lighten(#000, 60%);
+    transition: box-shadow .2s ease-in-out;
+}
