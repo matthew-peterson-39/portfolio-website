@@ -14,6 +14,7 @@
     background: transparent;
     backdrop-filter: blur(10px);
     box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    background-color: #171717;
 }
 
 #logo {
@@ -32,16 +33,37 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    gap: 3rem;
 }
+
+#contact-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    height: 2.11rem;
+    background-color: #FAC213;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1em;
+    border-color: white;
+    color: #000000;
+}
+
 #nav-bar a {
     text-decoration: none;
     padding: .5rem;
-    color: black;
+    color: #EDEDED;
 }
+
+#nav-bar #contact-button a{
+    color: #000000;
+}
+
 
 a:hover {
     opacity: 10%;
-    color: complement($color: #000000)
 }
 
 body {
@@ -56,7 +78,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: lightcyan;
+    background-color: #444444;
     padding: 1em 3em;
 }
 
@@ -67,6 +89,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #EDEDED;
 }
 
 #bio #bio-photo {
@@ -74,7 +97,7 @@ body {
    height: auto;
    border-radius: 4rem;
    border-style: solid;
-   border-color: #000000;
+   border-color: #FAC213;
    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
    margin-top: 2rem;
    margin-bottom: 2rem;
@@ -127,7 +150,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: lightcyan;
+    background-color: #444444;
     padding: 1em 3em;
   }
 
@@ -135,7 +158,6 @@ body {
     width: 30%;
     height: 25vh;
     text-align: center;
-    background-color: white;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -144,6 +166,11 @@ body {
     box-shadow: 0 0 40px lighten(#000, 60%);
     transition: box-shadow .2s ease-in-out;
     cursor: pointer;
+    border-color: #EDEDED;
+    border-style: solid;
+    background-color: #171717;
+    color: #EDEDED;
+
 }
 
 .project-display div:hover {
